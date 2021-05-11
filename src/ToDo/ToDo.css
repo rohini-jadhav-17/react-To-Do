@@ -1,0 +1,70 @@
+
+.ToDo{
+    display: flex;
+    margin: 5px 5px;
+    padding: 8px 10px;
+    justify-content: space-between;
+    align-content: center;
+    background: rgb(255, 255, 255,0.3);
+}
+.Todo-task{
+    position: relative;
+    transition: opacity 0.4s liner;
+}
+.Todo-task.completed{
+ opacity: 0.6;
+}
+.Todo-task.completed::before{
+    content: "";
+    position:absolute;
+    top: 30%;
+    display: block;
+    left: -0.5rem;
+    width: 0%;
+    height: 1px;
+    background: #ffffff;
+    animation: strike 0.5s ease-out 0s forwards;
+}
+@keyframes strike{
+    to{
+        width: calc(100% + 1rem);
+    }
+}
+
+.Todo-buttons{
+    flex-shrink: 0;
+    padding-left: 10px;
+}
+.Todo-buttons button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #ffffff;
+    font-size: 1em;
+    margin: 0.4em;
+}
+.Todo-form-edit{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Todo-form-edit input{
+    flex-grow: 1;
+    border: none;
+    background: #f7f1f1;
+    padding: 0 1.5rem;
+    font-size: initial;
+}
+.Todo-form-edit button{
+    border: none;
+    background: #ff6666;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 1.3rem;
+    margin-left: 5px;
+}
+.Todo-form-edit input,
+.Todo-form-edit button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 3rem;
+}

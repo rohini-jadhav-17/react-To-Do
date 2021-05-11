@@ -1,0 +1,29 @@
+.NewToDoForm{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.NewToDoForm input{
+    flex-grow: 1;
+    border: none;
+    background: #f7f1f1;
+    padding: 0 10px;
+    font-size: initial;
+}
+.NewToDoForm label{
+    font-size: initial;
+    padding: 0 10px;
+}
+.NewToDoForm button{
+    border: none;
+    background: #ff6666;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 1.3rem;
+}
+.NewToDoForm input,
+.NewToDoForm button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 2rem;
+}

@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  background:linear-gradient(90deg, rgb(247, 217, 222),rgb(231, 155, 241),rgb(159, 248, 221));
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100%;
+}
